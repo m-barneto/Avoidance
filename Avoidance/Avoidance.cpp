@@ -3,13 +3,12 @@
 #include "GameArea.h"
 using namespace sf;
 
-int main()
-{
+int main() {
     RenderWindow window(VideoMode(800, 600), "Avoidance");
 
     int gameSize = 1000;
 
-    GameArea game(1, gameSize, gameSize);
+    GameArea game(10, gameSize, gameSize);
 
     Clock timer;
     View view = window.getDefaultView();
